@@ -1,0 +1,452 @@
+/*****************/
+/* Fonts Used */
+/*****************/
+
+/* font-family: "Josefin Sans", sans-serif;
+font-family: "Lato", sans-serif;
+font-family: "Open Sans", sans-serif; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/************************/
+/*Some Initialisations*/
+/***********************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+P::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
+  background: #212529;
+  color: #fff;
+}
+
+:root {
+  --grey-0: #f7f7f7;
+  --grey-1: #f8f9fa;
+  --text-color: #343a40;
+  --black-bg: #212529;
+  --navBg: #868e96;
+  --blue-text: #042656;
+}
+
+:root {
+  --very-big-space: 12.8rem;
+  --big-space: 9.6rem;
+  --one-step-down-big-space: 8rem;
+  --mid-space: 6.4rem;
+  --one-step-down-mid-space: 4.8rem;
+  --low-space: 3.2rem;
+  --one-step-down-low-space: 2.4rem;
+  --verylow-space: 1.6rem;
+  --one-step-down-verylow-space: 1.2rem;
+}
+
+:root {
+  --border-radius-min: 0.9rem;
+  --border-radius-max: 1.1rem;
+}
+
+:root {
+  --heading-line-height-small: 1.05;
+  --heading-line-height: 1.2;
+  --paragraph-line-height: 1.6;
+  --paragraph-big-line-height: 1.8;
+}
+
+:root {
+  --letter-spacing: 0.5px;
+  --letter-spacing-More: 0.75px;
+}
+
+/* - Spacing system (px) => 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+/* Font sizes (px) => 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/************************/
+/* NAVIGATION BAR CSS */
+/************************/
+
+/************************/
+/* MAIN LAYER CSS */
+/************************/
+
+.Main_Layer {
+  padding: var(--big-space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/main-img-3.jpg") center center/cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.Main_Layer_col__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--low-space);
+}
+
+.Main_Layer_col__1 h1 {
+  font-size: 6.8rem;
+  font-weight: 900;
+}
+
+.Main_Layer_col__1 h2 {
+  font-size: 3.6rem;
+}
+
+.Main_Layer_col__1 p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 80%;
+  margin: auto;
+}
+
+.Main_Layer_col__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--one-step-down-mid-space) 0;
+}
+
+.Main_Layer_col__2 .ctaBtn {
+  padding: 2.4rem 4.4rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #757575 2%, #000000 82%);
+  transition: all 0.4s;
+}
+
+.Main_Layer_col__2 .ctaBtn:hover {
+  background: linear-gradient(to left, #757575 2%, #000000 82%);
+}
+
+.Main_Layer_col__2 form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+}
+
+.Main_Layer_col__2 input {
+  padding: 2rem;
+  width: 100%;
+  color: #fff;
+  font-size: 1.8rem;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.Main_Layer_col__2 input::placeholder {
+  color: #fff;
+  caret-color: #fff;
+}
+
+.Main_Layer_col__2 .messageBox {
+  padding: var(--low-space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.messageBox p {
+  line-height: var(--paragraph-big-line-height);
+  font-size: 1.8rem;
+}
+
+.messageBox .Manipulated_Number {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/************************/
+/* SECOND LAYER CSS */
+/************************/
+.second_layer {
+  padding: var(--big-space);
+}
+
+.second_layer .second_layer_col_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_layer .second_layer_col_1 h2 {
+  color: var(--blue-text);
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.second_layer .second_layer_col_1 .main_para {
+  font-size: 1.8rem;
+}
+
+.second_layer .second_layer_col_1 p {
+  line-height: var(--paragraph-big-line-height);
+  font-size: 1.6rem;
+  color: #495057;
+}
+
+.second_layer_col_1 .points {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ICONHERO {
+  height: 24px;
+  width: 24px;
+  stroke: #495057;
+}
+
+/************************/
+/* THIRD LAYER CSS */
+/************************/
+.third_layer {
+  padding: var(--big-space);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/main-img-1.jpeg") center center/cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third_layer .third_layer_col_1 {
+  padding: var(--mid-space) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.third_layer .third_layer_col_2 table {
+  width: 100%;
+  line-height: var(--paragraph-big-line-height);
+  text-align: center;
+  font-size: 1.8rem;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+.third_layer .third_layer_col_2 table tr {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+.third_layer .third_layer_col_2 table thead {
+  background: var(--grey-0);
+  color: var(--blue-text);
+}
+
+th {
+  border: 10px solid transparent;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.third_layer .third_layer_col_1 h3 {
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.third_layer .third_layer_col_1 p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.6rem;
+}
+
+.third_layer .third_layer_col_1 .Action__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.third_layer .third_layer_col_1 .Action__buttons .btn {
+  color: var(--blue-text);
+  font-size: 1.8rem;
+  background: #fff;
+  font-weight: 600;
+  padding: 0.8rem 2.4rem;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-max);
+}
+
+.third_layer .third_layer_col_1 .Action__buttons .activeBtn {
+  background: linear-gradient(to right, #757575 2%, #000000 82%);
+  color: #fff;
+}
+
+/************************/
+/* FOURTH LAYER CSS */
+/************************/
+.fourth_layer {
+  padding: var(--big-space);
+}
+
+.fourth_layer .fourth_layer_col_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.6rem;
+}
+
+.fourth_layer .fourth_layer_col_1 h3 {
+  color: var(--blue-text);
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.fourth_layer .fourth_layer_col_1 p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+/************************/
+/* FIFTH LAYER CSS */
+/************************/
+/* Font sizes (px) => 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+/* - Spacing system (px) => 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+.fifth_layer {
+  padding: var(--big-space);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/main-img-2.jpeg") center center/cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.fifth_layer .fifth_layer_col_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.6rem;
+}
+
+.fifth_layer .row {
+  padding: 2.4rem;
+}
+
+.fifth_layer .fifth_layer_col_1 h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.fifth_layer .fifth_layer_col_1 p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.fifth_layer .Mycard {
+  padding: 3rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-max);
+  transition: all 0.5s ease;
+}
+
+.fifth_layer .Mycard:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.fifth_layer .Mycard .iconHolder {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  fill: #fff;
+}
+
+.fifth_layer .Mycard h4 {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.fifth_layer .Mycard p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/************************/
+/* SIXTH LAYER CSS */
+/************************/ ;
