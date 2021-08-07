@@ -1,0 +1,122 @@
+/************************/
+/* MEDIA QUERIES */
+/************************/
+
+@media (max-width: 1408px) {
+  html {
+    font-size: 56.5%;
+  }
+}
+
+@media (max-width: 1275px) {
+  .Main_Layer_col__1 h1 {
+    font-size: 5.2rem;
+  }
+  .Main_Layer_col__1 p {
+    width: 90%;
+  }
+  .second_layer .second_layer_col_1 h2 {
+    font-size: 3rem;
+  }
+  .second_layer .second_layer_col_2 img {
+    height: 85%;
+    width: 85%;
+  }
+}
+
+@media (max-width: 992px) {
+  .Mycard {
+    margin-bottom: 2.4rem;
+  }
+  .fifth_layer .row:nth-child(1) {
+    padding: 2.4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Main_Layer_col__1 h1 {
+    font-size: 4.4rem;
+  }
+  .Main_Layer_col__1 h2 {
+    font-size: 3rem;
+  }
+  .Main_Layer_col__1 p {
+    font-size: 1.6rem;
+  }
+  .second_layer .col {
+    margin-bottom: 1rem;
+  }
+
+  .third_layer .third_layer_col_2 table {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  th {
+    font-size: 1.4rem;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+  .fifth_layer .row {
+    padding: 0;
+  }
+  .fifth_layer .row:nth-child(1) {
+    padding: 2.4rem 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .third_layer_col_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h3,
+  h2 {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive_Row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fifth_layer,
+  .third_layer,
+  .fourth_layer,
+  .second_layer,
+  .Main_Layer {
+    padding: 9.6rem 2.4rem;
+  }
+  .Main_Layer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .Main_Layer_col__1 h1 {
+    font-size: 5.2rem;
+    text-align: center;
+  }
+  .Main_Layer_col__1 h2 {
+    font-size: 3rem;
+  }
+  .Main_Layer_col__1 p {
+    font-size: 1.6rem;
+  }
+  .second_layer .col {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+}
+
+/* Font sizes (px) => 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+/* - Spacing system (px) => 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

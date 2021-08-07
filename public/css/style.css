@@ -103,7 +103,7 @@ h4::selection {
 /************************/
 
 .Main_Layer {
-  padding: var(--big-space);
+  padding: var(--big-space) 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +215,7 @@ h4::selection {
 /* SECOND LAYER CSS */
 /************************/
 .second_layer {
-  padding: var(--big-space);
+  padding: var(--big-space) 0;
 }
 
 .second_layer .second_layer_col_2 {
@@ -255,7 +255,7 @@ h4::selection {
 /* THIRD LAYER CSS */
 /************************/
 .third_layer {
-  padding: var(--big-space);
+  padding: var(--big-space) 0;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/main-img-1.jpeg") center center/cover;
   background-attachment: fixed;
@@ -342,7 +342,7 @@ td {
 /* FOURTH LAYER CSS */
 /************************/
 .fourth_layer {
-  padding: var(--big-space);
+  padding: var(--big-space) 0;
 }
 
 .fourth_layer .fourth_layer_col_1 {
@@ -370,11 +370,8 @@ td {
 /************************/
 /* FIFTH LAYER CSS */
 /************************/
-/* Font sizes (px) => 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
-/* - Spacing system (px) => 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
-
 .fifth_layer {
-  padding: var(--big-space);
+  padding: var(--big-space) 0;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/main-img-2.jpeg") center center/cover;
   background-attachment: fixed;
@@ -426,8 +423,8 @@ td {
 }
 
 .fifth_layer .Mycard .iconHolder {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.6rem;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
@@ -449,4 +446,87 @@ td {
 
 /************************/
 /* SIXTH LAYER CSS */
-/************************/ ;
+/************************/
+.sixth_layer {
+  padding: var(--big-space) 0;
+}
+
+.sixth_layer .sixth_layer_col_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sixth_layer .sixth_layer_col_1 h3 {
+  color: var(--blue-text);
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.sixth_layer .sixth_layer_col_1 p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.sixth_layer .row {
+  padding: 2.4rem;
+}
+
+.sixth_layer .sixth_layer_col_2 .accordion__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+
+.sixth_layer .sixth_layer_col_2 .accordion__card .accodion_inner_sec_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f5f8;
+  padding: 1rem 1rem 0.3rem 1rem;
+  cursor: pointer;
+}
+
+.sixth_layer .sixth_layer_col_2 .accordion__card p {
+  line-height: var(--paragraph-line-height);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343a40;
+  background: #f1f5f8;
+  padding: 1.6rem;
+}
+
+.sixth_layer .sixth_layer_col_2 .accordion__card h4 {
+  font-size: 2rem;
+  color: var(--blue-text);
+}
+
+.sixth_layer .sixth_layer_col_2 .accordion__card .ICONHERO {
+  cursor: pointer;
+  stroke: var(--blue-text);
+}
+
+.notactive p {
+  display: none;
+}
+
+/************************/
+/* FOOTER LAYER CSS */
+/************************/
+/* Font sizes (px) => 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+/* - Spacing system (px) => 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+footer {
+  background: #212529;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.4rem 1.4rem 0.4rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
