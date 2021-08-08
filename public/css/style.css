@@ -52,6 +52,8 @@ h3::selection,
 h4::selection,
 th::selection,
 tr::selection,
+span::selection,
+img::selection,
 td::selection {
   background: #212529;
   color: #fff;
@@ -734,6 +736,7 @@ header nav ul {
     display: flex;
     gap: 0;
   }
+
   header nav ul {
     position: absolute;
     top: 6vh;
@@ -744,9 +747,13 @@ header nav ul {
     background: var(--grey-0);
     transform: translate(-100%);
     transition: all 0.3s;
-    /* justify-content: flex-start; */
-    /* gap: 2rem; */
-    /* align-items: flex-start; */
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  header nav ul li:nth-child(1) {
+    margin-top: 20px;
   }
 
   .nav_link a {

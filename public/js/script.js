@@ -7,7 +7,7 @@ accordionBoxes.forEach((element) => {
 });
 
 // NAVBAR FUNCTION //
-const navLink = document.querySelector(".nav_link");
+const navLink = document.querySelectorAll(".nav_link");
 const navLinksHolder = document.querySelector(".nav_links");
 const burger = document.querySelector(".burger");
 const line1 = document.querySelector(".line__1");
@@ -19,7 +19,36 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("toggle");
 });
 
+navLink.forEach((el) => {
+  el.addEventListener("click", () => {
+    navLinksHolder.classList.remove("navActive");
+    burger.classList.remove("toggle");
+  });
+});
+
 // STICKY NAVBAR //
+const sectionHeroEl = document.querySelector(".Main_Layer");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.querySelector(".scrollUpBox").style.display = "block";
+    }
+
+    if (ent.isIntersecting === true) {
+      document.querySelector(".scrollUpBox").style.display = "none";
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 // TEXT ANIMATION //
 const NumHolder = document.querySelector(".Num_holder");
